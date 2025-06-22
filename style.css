@@ -203,3 +203,11 @@ iframe {
   max-width: 100%;
   height: auto;
 }
+.featured-image {
+  display: block;
+  margin: 20px auto;
+  max-width: 90%;
+  width: 600px;
+  height: auto;
+}
+
