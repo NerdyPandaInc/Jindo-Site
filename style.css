@@ -122,3 +122,29 @@ iframe {
   transform: translateX(5px);
   color: #00ffff;
 }
+
+.swap-section {
+  background: linear-gradient(135deg, #1a1a1a, #2c2c2c);
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 600px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 204, 255, 0.15);
+}
+
+.swap-title {
+  font-size: 2rem;
+  color: #00ccff;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.swap-button {
+  display: inline-block;
+  background-color: #00ccff;
+  color: #000;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.2rem;
+  font
