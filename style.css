@@ -197,3 +197,9 @@ iframe {
     flex: 1 1 100%;
   }
 }
+.side-image.center {
+  display: block;
+  margin: 20px auto;
+  max-width: 100%;
+  height: auto;
+}
