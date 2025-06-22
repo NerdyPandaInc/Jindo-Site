@@ -149,3 +149,51 @@ iframe {
   font-size: 1.2rem;
   font
 }
+.tokenomics-wrapper,
+.buy-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(145deg, #222, #111);
+  padding: 2rem;
+  border-radius: 12px;
+  margin: 2rem auto;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  flex-wrap: wrap;
+  max-width: 900px;
+}
+
+.tokenomics-content,
+.buy-content {
+  flex: 1 1 60%;
+  padding: 1rem;
+}
+
+.side-image {
+  width: 100px;
+  height: auto;
+  flex: 1 1 15%;
+  margin: 1rem;
+}
+
+.side-image.left {
+  order: -1;
+}
+
+@media (max-width: 768px) {
+  .tokenomics-wrapper,
+  .buy-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .side-image {
+    order: 0;
+    width: 80px;
+  }
+
+  .tokenomics-content,
+  .buy-content {
+    flex: 1 1 100%;
+  }
+}
