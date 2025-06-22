@@ -79,3 +79,46 @@ iframe {
   from { opacity: 0; transform: translateY(30px); }
   to { opacity: 1; transform: translateY(0); }
 }
+
+.buy-section {
+  background: linear-gradient(135deg, #1e1e1e, #2a2a2a);
+  padding: 2.5rem;
+  margin: 2rem auto;
+  max-width: 600px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 204, 255, 0.15);
+  animation: fadeInUp 1.3s ease-in-out;
+}
+
+.buy-title {
+  font-size: 2.3rem;
+  color: #00ccff;
+  font-family: 'Segoe UI', sans-serif;
+  text-transform: uppercase;
+  text-shadow: 0 1px 3px #000;
+  letter-spacing: 1.5px;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.buy-steps {
+  list-style: none;
+  padding-left: 0;
+  font-size: 1.3rem;
+  color: #f0f0f0;
+  line-height: 2rem;
+  counter-reset: step-counter;
+}
+
+.buy-steps li {
+  margin-bottom: 1rem;
+  position: relative;
+  padding-left: 2rem;
+  font-weight: 500;
+  transition: transform 0.3s ease;
+}
+
+.buy-steps li:hover {
+  transform: translateX(5px);
+  color: #00ffff;
+}
