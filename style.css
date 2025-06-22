@@ -92,7 +92,7 @@ iframe {
 
 .buy-title {
   font-size: 2.3rem;
-  color: #00ccff;
+  color: #ffd700;
   font-family: 'Segoe UI', sans-serif;
   text-transform: uppercase;
   text-shadow: 0 1px 3px #000;
@@ -135,7 +135,7 @@ iframe {
 
 .swap-title {
   font-size: 2rem;
-  color: #00ccff;
+  color: #ffd700;
   margin-bottom: 1rem;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -148,3 +148,4 @@ iframe {
   padding: 0.75rem 1.5rem;
   font-size: 1.2rem;
   font
+}
