@@ -238,5 +238,9 @@ iframe {
   0%   { transform: translateX(0); }
   100% { transform: translateX(-100%); }
 }
+#memeTicker:hover #memeTicker-content {
+  animation-play-state: paused;
+}
+
 
 
