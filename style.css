@@ -233,12 +233,15 @@ iframe {
   100% { transform: translateX(-100%); }
 }
 .spinning {
-  animation: spin 2s linear infinite;
+  animation: spin 10s linear infinite; /* Slowed from 4s to 10s */
+  display: block;
+  margin: 20px auto;
+  max-width: 100px; /* Smaller image */
+  height: auto;
 }
 
 @keyframes spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
-
 
