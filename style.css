@@ -246,11 +246,11 @@ iframe {
   to { transform: rotateY(360deg); }
 }
 .coin-flip {
-  margin-bottom: 10px; /* Reduce space under the image */
+  margin-bottom: 5px; /* Reduce space under the image */
 }
 
 h1 {
-  margin-top: 10px; /* Reduce space above the heading */
+  margin-top: 5px; /* Reduce space above the heading */
 }
 img.coin-flip + h1 {
   margin-top: 5px;
