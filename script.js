@@ -1,13 +1,9 @@
 document.addEventListener("DOMContentLoaded", () => {
-  console.log("JINDO site loaded. Let the memecoin magic begin 🐕🔥");
-
-  const button = document.getElementById("generateBtn");
-
-  button.addEventListener("click", () => {
-    const meme = document.getElementById("template").value;
-    const top = encodeURIComponent(document.getElementById("topText").value);
-    const bottom = encodeURIComponent(document.getElementById("bottomText").value);
-    const url = `https://apimeme.com/meme?meme=${meme}&top=${top}&bottom=${bottom}`;
+  document.getElementById("generateBtn").addEventListener("click", () => {
+    const template = document.getElementById("template").value;
+    const top = encodeURIComponent(document.getElementById("topText").value || "_");
+    const bottom = encodeURIComponent(document.getElementById("bottomText").value || "_");
+    const url = `https://api.memegen.link/images/${template}/${top}/${bottom}.png`;
 
     const img = document.getElementById("memeImage");
     img.src = url;
