@@ -1,11 +1,19 @@
-fetch('https://api.coingecko.com/api/v3/simple/price?ids=dogecoin,pepe,shiba-inu&vs_currencies=usd')
+const memeIds = [
+  'dogecoin', 'shiba-inu', 'pepe', 'trump', 'bonk',
+  'spx6900', 'fartcoin', 'floki', 'dogwifhat', 'pudgy-penguins'
+];
+
+fetch(`https://api.coingecko.com/api/v3/simple/price?ids=${memeIds.join(',')}&vs_currencies=usd`)
   .then(res => res.json())
   .then(data => {
     const ticker = document.getElementById('memeTicker-content');
-    ticker.innerHTML = Object.entries(data)
-      .map(([name, val]) => `<span style="margin-right: 40px;">${name.toUpperCase()}: $${val.usd}</span>`)
-      .join('');
+    const items = memeIds.map(id => {
+      const price = data[id]?.usd?.toFixed(6) || 'N/A';
+      return `<span style="margin-left: 40px;">${id.replace(/-/g, ' ').toUpperCase()}: $${price}</span>`;
+    });
+    ticker.innerHTML = items.join('');
   });
+
 
 document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("generateBtn").addEventListener("click", () => {
