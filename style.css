@@ -212,22 +212,6 @@ iframe {
 }
 /* 2) CSS: in your global stylesheet */
 #memeTicker {
-  position: fixed;
-  top: 0; left: 0; right: 0;
-  height: 30px;
-  background: #111;
-  color: #fff;
-  overflow: hidden;
-  z-index: 1000;
-  font: 14px/30px sans-serif;
-}
-# memeTicker-content {
-  display: inline-block;
-  white-space: nowrap;
-  padding-left: 100%;  /* start off screen right */
-  animation: scrollTicker 20s linear infinite;
-}
-#memeTicker {
   overflow: hidden;
   white-space: nowrap;
   background: #111;
