@@ -1,30 +1,11 @@
-// 3) JavaScript: include just before </body>
-<script>
-  async function loadMemeTicker() {
-    const url =
-      "https://api.coingecko.com/api/v3/coins/markets" +
-      "?vs_currency=usd&category=meme&order=market_cap_desc&per_page=10&page=1";
-    try {
-      const res = await fetch(url);
-      const coins = await res.json();
-      const container = document.getElementById("memeTicker-content");
-      container.innerHTML = coins.map(c => {
-        const change = c.price_change_percentage_24h.toFixed(2);
-        const cls = change >= 0 ? "memeUp" : "memeDown";
-        return `<span class="${cls}">
-                  ${c.symbol.toUpperCase()}: ${change}% 
-                </span>`;
-      }).join("");
-    } catch (e) {
-      console.error("Ticker load failed", e);
-    }
-  }
-
-  // reload every 5 minutes
-  loadMemeTicker();
-  setInterval(loadMemeTicker, 5 * 60 * 1000);
-</script>
-
+fetch('https://api.coingecko.com/api/v3/simple/price?ids=dogecoin,pepe,shiba-inu&vs_currencies=usd')
+  .then(res => res.json())
+  .then(data => {
+    const ticker = document.getElementById('memeTicker-content');
+    ticker.innerHTML = Object.entries(data)
+      .map(([name, val]) => `<span style="margin-right: 40px;">${name.toUpperCase()}: $${val.usd}</span>`)
+      .join('');
+  });
 
 document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("generateBtn").addEventListener("click", () => {
