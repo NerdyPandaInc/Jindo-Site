@@ -8,78 +8,70 @@
 </head>
 <body>
   <header>
-<video autoplay loop muted playsinline width="250">
-  <source src="assets/videos/vidu-video-2830399522069780.mp4" type="video/mp4" />
-Your browser does not support the video tag.
-  </video>
+    <video autoplay loop muted playsinline width="250">
+      <source src="assets/videos/vidu-video-2830399522069780.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
 
     <h1>JINDO Token</h1>
     <p><strong>The Loyal Warrior Companion of the Polygon blockchain</strong></p>
-
     <p>The most famous Jindo dog is <strong>Baekgu</strong>, celebrated for her incredible loyalty and her journey back to her original owner after being sold to a distant home.</p>
-
     <p>This legendary tale became a national sensation in South Korea and here’s why:</p>
-
     <p><strong>The Journey:</strong> Baekgu, originally raised on Jindo Island, was sold to a new owner in Daejeon, roughly 300 km (180 miles) away.</p>
-
     <p><strong>Return Home:</strong> After seven months, Baekgu escaped and traveled the entire way back—on foot—to her original owner, Park Bok-dan, on Jindo Island.</p>
-
     <p><strong>National Sensation:</strong> Baekgu's journey inspired books, a TV documentary, and a monument in her hometown.</p>
-
     <p><strong>Loyalty and Love:</strong> Her devotion made Baekgu a living symbol of the Jindo breed's extraordinary bond with their humans.</p>
-
     <p><strong>Another Baekgu:</strong> In a separate tale, a Jindo by the same name mourned his owner for seven days, refusing food during that time.</p>
-
     <p>In honor of Baekgu’s journey, <strong>180T tokens</strong> were created—each trillion representing a mile she traveled to find joy again.</p>
-
     <p>The burn mechanism represents her enduring loyalty, immortalized on the blockchain.</p>
-    
-<div class="news-section">
-  <p><strong>In The News:</strong> 
-    <a href="https://www.oodlelife.com/loyalty-beyond-death/" target="_blank" rel="noopener noreferrer">
-      Read the full story
-    </a>
-  </p>
-<img src="assets/images/OG.webp" alt="Baekgu loyalty story featured image" class="featured-image" />
-</div>
 
+    <div class="news-section">
+      <p><strong>In The News:</strong> 
+        <a href="https://www.oodlelife.com/loyalty-beyond-death/" target="_blank" rel="noopener noreferrer">
+          Read the full story
+        </a>
+      </p>
+      <img src="assets/images/OG.webp" alt="Baekgu loyalty story featured image" class="featured-image" />
+    </div>
   </header>
 
+  <!-- 👇 Inserted Meme Generator Section Here -->
+  <section id="meme-generator" style="text-align: center; padding: 40px;">
+    <h2>Create a Meme, JINDO Style 🐾</h2>
+    <p>Choose a meme, add your text, and mark it with loyalty.</p>
+
+    <select id="template">
+      <option value="Grumpy-Cat">Grumpy Cat</option>
+      <option value="Futurama-Fry">Futurama Fry</option>
+      <option value="Condescending-Wonka">Condescending Wonka</option>
+      <option value="Y-U-No">Y U NO</option>
+      <option value="One-Does-Not-Simply">One Does Not Simply</option>
+    </select><br>
+
+    <input id="topText" placeholder="Top text" style="margin: 5px;">
+    <input id="bottomText" placeholder="Bottom text" style="margin: 5px;"><br>
+
+    <button onclick="generateMeme()">Generate Meme</button>
+
+    <div id="memePreview" style="position: relative; display: none; margin-top: 20px;">
+      <img id="memeImage" style="max-width: 100%; border-radius: 10px;">
+      <div id="watermark" style="
+        position: absolute;
+        bottom: 10px;
+        right: 14px;
+        font-size: 14px;
+        font-family: sans-serif;
+        color: rgba(255,255,255,0.75);
+        text-shadow: 1px 1px 2px black;
+      ">Powered by JINDO</div>
+    </div>
+
+    <br>
+    <a id="downloadLink" download="jindo-meme.jpg" style="display: none;">Download Meme</a>
+  </section>
+  <!-- 👆 Meme Generator Ends Here -->
+
 <main>
-<section id="meme-generator" style="text-align: center; padding: 40px;">
-  <h2>Create a Meme, JINDO Style 🐾</h2>
-  <p>Choose a meme, add your text, and mark it with loyalty.</p>
-
-  <select id="template">
-    <option value="Grumpy-Cat">Grumpy Cat</option>
-    <option value="Futurama-Fry">Futurama Fry</option>
-    <option value="Condescending-Wonka">Condescending Wonka</option>
-    <option value="Y-U-No">Y U NO</option>
-    <option value="One-Does-Not-Simply">One Does Not Simply</option>
-  </select><br>
-
-  <input id="topText" placeholder="Top text" style="margin: 5px;">
-  <input id="bottomText" placeholder="Bottom text" style="margin: 5px;"><br>
-
-  <button onclick="generateMeme()">Generate Meme</button>
-
-  <div id="memePreview" style="position: relative; display: none; margin-top: 20px;">
-    <img id="memeImage" style="max-width: 100%; border-radius: 10px;">
-    <div id="watermark" style="
-      position: absolute;
-      bottom: 10px;
-      right: 14px;
-      font-size: 14px;
-      font-family: sans-serif;
-      color: rgba(255,255,255,0.75);
-      text-shadow: 1px 1px 2px black;
-    ">Powered by JINDO</div>
-  </div>
-
-  <br>
-  <a id="downloadLink" download="jindo-meme.jpg" style="display: none;">Download Meme</a>
-</section>
-  
 <section id="tokenomics" class="tokenomics-wrapper">
   <img src="assets/images/JindoPepe-removebg-preview.png" alt="Jindo Warrior Left" class="side-image left" />
   
@@ -93,10 +85,8 @@ Your browser does not support the video tag.
       <li>💧 <strong>1.4%</strong> to Liquidity</li>
     </ul>
   </div>
-
 </section>
-</main>
-<main>
+
 <section id="how-to-buy" class="buy-wrapper">
   <img src="assets/images/sticker pack.png" alt="QuickSwap Icon" class="side-image left" />
 
@@ -113,24 +103,24 @@ Your browser does not support the video tag.
   <img src="assets/images/create a logo of a j.png" alt="Swap Illustration" class="side-image right" />
 </section>
 
-  <section id="swap-now" class="swap-section">
+<section id="swap-now" class="swap-section">
   <h2 class="swap-title">🚀 Swap JINDO on QuickSwap</h2>
   <a href="https://quickswap.exchange/#/swap?outputCurrency=YOUR_TOKEN_ADDRESS" target="_blank" class="swap-button">
     Launch QuickSwap
   </a>
 </section>
 
-    <section id="widgets">
-      <h2>Live Stats</h2>
-      <iframe src="https://dexscreener.com/polygon/YOUR_TOKEN_ADDRESS" width="100%" height="400"></iframe>
-      <iframe src="https://t.me/YOUR_TELEGRAM_WIDGET" width="100%" height="400"></iframe>
-    </section>
-  </main>
+<section id="widgets">
+  <h2>Live Stats</h2>
+  <iframe src="https://dexscreener.com/polygon/YOUR_TOKEN_ADDRESS" width="100%" height="400"></iframe>
+  <iframe src="https://t.me/YOUR_TELEGRAM_WIDGET" width="100%" height="400"></iframe>
+</section>
+</main>
 
-  <footer>
-    <p>Join the Jindo Army on <a href="https://t.me/jindotoken" target="_blank">Telegram</a></p>
-  </footer>
+<footer>
+  <p>Join the Jindo Army on <a href="https://t.me/jindotoken" target="_blank">Telegram</a></p>
+</footer>
 
-  <script src="script.js"></script>
+<script src="script.js" defer></script>
 </body>
 </html>
