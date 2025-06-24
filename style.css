@@ -214,23 +214,25 @@ iframe {
 #memeTicker {
   overflow: hidden;
   white-space: nowrap;
-  background: #111;
+  padding: 14px 0;
+  margin-top: 30px; /* ⬅ Adds vertical space from elements above */
+  background-color: transparent; /* ⬅ Transparent background */
   color: #fff;
-  padding: 10px 0;
   font-family: monospace;
-  position: relative;
+  font-size: 16px;
 }
 
 #memeTicker-content {
   display: inline-block;
   padding-left: 100%;
-  animation: scroll-rtl 30s linear infinite;
+  animation: scroll-rtl 60s linear infinite; /* ⬅ Slower scroll (was 30s) */
 }
 
 @keyframes scroll-rtl {
   0% { transform: translateX(0); }
   100% { transform: translateX(-100%); }
 }
+
 
 
 
