@@ -1,7 +1,9 @@
 document.addEventListener("DOMContentLoaded", () => {
   console.log("JINDO site loaded. Let the memecoin magic begin 🐕🔥");
 
-  window.generateMeme = function () {
+  const button = document.getElementById("generateBtn");
+
+  button.addEventListener("click", () => {
     const meme = document.getElementById("template").value;
     const top = encodeURIComponent(document.getElementById("topText").value);
     const bottom = encodeURIComponent(document.getElementById("bottomText").value);
@@ -13,5 +15,5 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("memePreview").style.display = "inline-block";
     document.getElementById("downloadLink").href = url;
     document.getElementById("downloadLink").style.display = "inline-block";
-  };
+  });
 });
