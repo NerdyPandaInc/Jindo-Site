@@ -233,8 +233,8 @@ iframe {
   100% { transform: translateX(-100%); }
 }
 .coin-flip {
-  width: 600px;
-  height: 600px;
+  width: 300px;
+  height: 300px;
   display: block;
   margin: 0 auto;
   transform-style: preserve-3d;
