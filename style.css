@@ -232,16 +232,16 @@ iframe {
   0% { transform: translateX(0); }
   100% { transform: translateX(-100%); }
 }
-.spinning {
-  animation: spin 10s linear infinite; /* Slowed from 4s to 10s */
+.coin-flip {
+  width: 100px;
+  height: 100px;
   display: block;
-  margin: 20px auto;
-  max-width: 100px; /* Smaller image */
-  height: auto;
+  margin: 0 auto;
+  transform-style: preserve-3d;
+  animation: flip 2s linear infinite;
 }
 
-@keyframes spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+@keyframes flip {
+  from { transform: rotateY(0deg); }
+  to { transform: rotateY(360deg); }
 }
-
