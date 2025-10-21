@@ -4,16 +4,26 @@
   --white: #FFFFFF;
 }
 
-body {
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
   font-family: 'Oswald', sans-serif;
   background-color: var(--black);
   color: var(--crimson);
+  line-height: 1.6;
 }
 
 h1, h2, h3, p, li, a {
   color: var(--crimson);
   text-shadow: 1px 1px 2px var(--white);
+}
+
+a {
+  text-decoration: none;
 }
 
 header {
@@ -37,6 +47,11 @@ header .overlay {
   align-items: center;
   justify-content: center;
   text-align: center;
+  padding: 0 1rem;
+}
+
+header h1 {
+  font-size: 3rem;
 }
 
 .section {
@@ -53,15 +68,16 @@ header .overlay {
 .ethos h2 {
   text-align: center;
   margin-bottom: 1rem;
+  font-size: 2rem;
 }
 
 .ethos ul {
   list-style: none;
-  padding: 0;
 }
 
 .ethos li {
   margin-bottom: 0.5rem;
+  font-size: 1.1rem;
 }
 
 .roster, .videos, .schedule {
@@ -71,15 +87,25 @@ header .overlay {
 }
 
 .card {
-  background: var(--black);
+  background-color: var(--black);
   border: 1px solid var(--crimson);
   padding: 1rem;
   border-radius: 8px;
   box-shadow: 0 0 10px var(--white);
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+.card p {
+  margin-top: 0.5rem;
+  font-size: 1rem;
 }
 
 footer {
-  background: var(--black);
+  background-color: var(--black);
   color: var(--crimson);
   text-align: center;
   padding: 1rem;
@@ -87,8 +113,6 @@ footer {
 }
 
 footer a {
-  color: var(--crimson);
-  text-shadow: 1px 1px 2px var(--white);
   margin: 0 0.5rem;
-  text-decoration: none;
+  font-weight: bold;
 }
