@@ -1,15 +1,19 @@
 :root {
   --crimson: #9E1B32;
-  --cool-grey: #D3D3D3;
-  --charcoal: #333333;
+  --black: #000000;
   --white: #FFFFFF;
 }
 
 body {
   margin: 0;
   font-family: 'Oswald', sans-serif;
-  background-color: var(--cool-grey);
-  color: var(--charcoal);
+  background-color: var(--black);
+  color: var(--crimson);
+}
+
+h1, h2, h3, p, li, a {
+  color: var(--crimson);
+  text-shadow: 1px 1px 2px var(--white);
 }
 
 header {
@@ -28,11 +32,10 @@ header .overlay {
   position: absolute;
   top: 0; left: 0;
   width: 100%; height: 100%;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.6);
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--white);
   text-align: center;
 }
 
@@ -41,9 +44,10 @@ header .overlay {
 }
 
 .ethos {
-  background-color: var(--crimson);
-  color: var(--white);
+  background-color: var(--black);
   padding: 2rem;
+  border-top: 2px solid var(--crimson);
+  border-bottom: 2px solid var(--crimson);
 }
 
 .ethos h2 {
@@ -67,21 +71,24 @@ header .overlay {
 }
 
 .card {
-  background: var(--white);
+  background: var(--black);
+  border: 1px solid var(--crimson);
   padding: 1rem;
   border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 0 10px var(--white);
 }
 
 footer {
-  background: var(--charcoal);
-  color: var(--white);
+  background: var(--black);
+  color: var(--crimson);
   text-align: center;
   padding: 1rem;
+  border-top: 2px solid var(--crimson);
 }
 
 footer a {
-  color: var(--cool-grey);
+  color: var(--crimson);
+  text-shadow: 1px 1px 2px var(--white);
   margin: 0 0.5rem;
   text-decoration: none;
 }
