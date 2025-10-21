@@ -2,191 +2,79 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>JINDO</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Western Wildcats Football</title>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <!-- 🌐 Add this inside your <body> -->
-<div id="crypto-disclaimer" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%;
-    background-color: rgba(0,0,0,0.8); display: flex; align-items: center; justify-content: center; z-index: 9999;">
-  <div style="background-color: #111; color: white; padding: 30px; border-radius: 12px; max-width: 500px; text-align: center;">
-    <img src="assets/images/JindoPepe-removebg-preview.png" alt="Logo" style="width: 80px; margin-bottom: 20px;">
-    <h2 style="margin-bottom: 15px;">Crypto Disclaimer</h2>
-    <p style="font-size: 15px; line-height: 1.6;">
-      This website is for informational purposes only. Cryptocurrency investments carry risk and may result in loss of capital. Please DYOR (Do Your Own Research).
-    </p>
-    <button onclick="document.getElementById('crypto-disclaimer').style.display='none';"
-      style="margin-top: 20px; padding: 10px 20px; font-size: 16px; background: #00aaff; color: white; border: none; border-radius: 5px; cursor: pointer;">
-      Proceed
-    </button>
-  </div>
-</div>
+
   <header>
-    <!-- 1) HTML: put this at the top of your <body> -->
-<div id="memeTicker">
-  <div id="memeTicker-content"></div>
-</div>
-
-<img src="assets/images/JindoMain2.png" class="coin-flip" alt="Flipping Coin">
-<h1>JINDO Token</h1>
-<p><strong>The Loyal Warrior Companion of the Polygon blockchain</strong></p>
-
-    <p>The most famous Jindo dog is <strong>Baekgu</strong>, celebrated for her incredible loyalty and her journey back to her original owner after being sold to a distant home.</p>
-    <p>This legendary tale became a national sensation in South Korea and here’s why:</p>
-    <p><strong>The Journey:</strong> Baekgu, originally raised on Jindo Island, was sold to a new owner in Daejeon, roughly 300 km (180 miles) away.</p>
-    <p><strong>Return Home:</strong> After seven months, Baekgu escaped and traveled the entire way back—on foot—to her original owner, Park Bok-dan, on Jindo Island.</p>
-    <p><strong>National Sensation:</strong> Baekgu's journey inspired books, a TV documentary, and a monument in her hometown.</p>
-    <p><strong>Loyalty and Love:</strong> Her devotion made Baekgu a living symbol of the Jindo breed's extraordinary bond with their humans.</p>
-    <p><strong>Another Baekgu:</strong> In a separate tale, a Jindo by the same name mourned his owner for seven days, refusing food during that time.</p>
-    <p>In honor of Baekgu’s journey, <strong>180T tokens</strong> were created—each trillion representing a mile she traveled to find joy again.</p>
-    <p>The burn mechanism represents her enduring loyalty, immortalized on the blockchain.</p>
-
-    <div class="news-section">
-      <p><strong>In The News:</strong> 
-        <a href="https://www.oodlelife.com/loyalty-beyond-death/" target="_blank" rel="noopener noreferrer">
-          Read the full story
-        </a>
-      </p>
-      <img src="assets/images/OG.webp" alt="Baekgu loyalty story featured image" class="featured-image" />
+    <video autoplay muted loop>
+      <source src="videos/wildcats-highlight.mp4" type="video/mp4" />
+    </video>
+    <div class="overlay">
+      <h1>Western Wildcats Football</h1>
     </div>
   </header>
 
-  <!-- 👇 Inserted Meme Generator Section Here -->
-<section id="meme-generator" style="text-align: center; padding: 40px;">
-  <img src="assets/images/ElonMusk.PNG" alt="" class="featured-image" />
-  <h2>Create a Meme, JINDO Style 🐾</h2>
-  <p>Choose a meme, add your text, and mark it with loyalty.</p>
+  <section class="ethos">
+    <h2>WILD CATS Ethos</h2>
+    <ul>
+      <li><strong>W</strong> – Work Ethic</li>
+      <li><strong>I</strong> – Integrity</li>
+      <li><strong>L</strong> – Leadership</li>
+      <li><strong>D</strong> – Development</li>
+      <li><strong>C</strong> – Community</li>
+      <li><strong>A</strong> – Accountability</li>
+      <li><strong>T</strong> – Teamwork</li>
+      <li><strong>S</strong> – Safety</li>
+    </ul>
+  </section>
 
-  <select id="template">
-<option value="buzz">Buzz Lightyear</option>
-<option value="drake">Drake</option>
-<option value="doge">Doge</option>
-<option value="gru">Gru Plan</option>
-<option value="bad">Bad Luck Brian</option>
-<option value="distracted">Distracted Boyfriend</option>
-<option value="spongebob">Mocking Spongebob</option>
-<option value="change">Change My Mind</option>
-<option value="uno">UNO Draw 25</option>
-<option value="batman">Batman Slapping Robin</option>
-<option value="brain">Expanding Brain</option>
-<option value="cat">Woman Yelling at Cat</option>
-<option value="pooh">Tuxedo Winnie the Pooh</option>
-<option value="pigeon">Is This a Pigeon?</option>
-<option value="bernie">Bernie I Am Once Again Asking</option>
-<option value="success">Success Kid</option>
-<option value="aliens">Ancient Aliens</option>
-<option value="puppet">Awkward Look Monkey Puppet</option>
-<option value="handshake">Epic Handshake</option>
-<option value="padme">Anakin and Padme</option>
-<option value="spiderman">Spider-Man Pointing</option>
-<option value="pikachu">Surprised Pikachu</option>
-<option value="thisisfine">This Is Fine</option>
-<option value="harold">Hide the Pain Harold</option>
-<option value="boardroom">Boardroom Suggestion</option>
-<option value="bike">Bike Fall</option>
-<option value="offer">Trade Offer</option>
-<option value="buffcheems">Buff Doge vs. Cheems</option>
-<option value="yuno">Y U NO Guy</option>
-<option value="wonka">Condescending Wonka</option>
-<option value="philosoraptor">Philosoraptor</option>
-<option value="cryingjordan">Crying Jordan</option>
+  <section class="section">
+    <h2>Team Roster</h2>
+    <div class="roster">
+      <div class="card">#12 – QB – Jordan Smith</div>
+      <div class="card">#22 – RB – Malik Johnson</div>
+      <div class="card">#45 – LB – Chris Taylor</div>
+    </div>
+  </section>
 
-  </select><br><br>
+  <section class="section">
+    <h2>Video Highlights</h2>
+    <div class="videos">
+      <div class="card">
+        <video controls width="100%">
+          <source src="videos/highlight1.mp4" type="video/mp4" />
+        </video>
+        <p>Week 1 Highlights</p>
+      </div>
+      <div class="card">
+        <video controls width="100%">
+          <source src="videos/highlight2.mp4" type="video/mp4" />
+        </video>
+        <p>Week 2 Highlights</p>
+      </div>
+    </div>
+  </section>
 
-  <input id="topText" placeholder="Top text" style="margin: 5px;">
-  <input id="bottomText" placeholder="Bottom text" style="margin: 5px;"><br><br>
+  <section class="section">
+    <h2>Schedule</h2>
+    <div class="schedule">
+      <div class="card">Oct 25 – vs Eastside Eagles</div>
+      <div class="card">Nov 1 – @ Southside Sharks</div>
+      <div class="card">Nov 8 – vs Central Cougars</div>
+    </div>
+  </section>
 
-  <button id="generateBtn">Generate Meme</button>
+  <footer>
+    <p>Follow Us:</p>
+    <a href="#">Instagram</a>
+    <a href="#">YouTube</a>
+    <a href="#">Facebook</a>
+    <p>&copy; 2025 Western Wildcats Football</p>
+  </footer>
 
-  <div id="memePreview" style="position: relative; display: none; margin-top: 20px;">
-    <img id="memeImage" style="max-width: 100%; border-radius: 10px;">
-    <div id="watermark" style="
-      position: absolute;
-      bottom: 10px;
-      right: 14px;
-      font-size: 14px;
-      font-family: sans-serif;
-      color: rgba(255,255,255,0.75);
-      text-shadow: 1px 1px 2px black;
-    ">Powered by JINDO</div>
-  </div>
-
-  <br>
-  <a id="downloadLink" download="jindo-meme.jpg" style="display: none;">Download Meme</a>
-</section>
-  <!-- 👆 Meme Generator Ends Here -->
-
-<main>
-<section id="baekgu-youtube" style="margin-top: 40px; text-align: center;">
-  <h2>🐾 A National Treasure of South Korea</h2>
-
-  <div style="max-width: 720px; margin: 0 auto;">
-    <iframe width="100%" height="405"
-      src="https://www.youtube.com/embed/YPxp6jKIqPM?autoplay=1&mute=1&loop=1&playlist=YPxp6jKIqPM"
-      title="Baekgu the Jindo Dog"
-      frameborder="0"
-      allow="autoplay; encrypted-media"
-      allowfullscreen>
-    </iframe>
-  </div>
-</section>
-  
-  <div class="tokenomics-content">
-<table style="width: 100%; border-collapse: collapse; background-color: transparent; color: #fff; font-family: sans-serif;">
-  <thead>
-<h2>This Is The Way Of JINDO</h2>
-<p>
-🌐 <strong>JINDO Token Highlights</strong><br />
-JINDO is not just another token—it's a programmable, upgradeable, and community-forward asset. Built on Polygon for fast, low-cost transactions, it offers:
-</p>
-<ul>
-  <li>🔁 <strong>1.75% Reflections</strong> — Rewards distributed to holders on every transfer</li>
-  <li>🔥 <strong>1.75% Deflationary Burn</strong> — Burned until 10% supply cap, then redirected to a reserve wallet</li>
-  <li>💰 <strong>1.75% Treasury & LP Support</strong> — Ensures sustainable liquidity and growth</li>
-  <li>👨‍💻 <strong>1.75% Dev Allocation</strong> — Powers continued development & governance tooling</li>
-</ul>
-
-<p>
-JINDO’s contract is pausable, upgradeable (UUPS), and built for long-term adaptability. Key wallets are excluded from fees and reflections to keep the system fair and decentralized.
-</p>
-
-
-</section>
-
-<section id="how-to-buy" class="buy-wrapper">
-  <img src="assets/images/sticker pack.png" alt="QuickSwap Icon" class="side-image left" />
-
-  <div class="buy-content">
-    <h2 class="buy-title">🛒 How to Buy</h2>
-    <ol class="buy-steps">
-      <li>🔗 Connect <strong>MetaMask</strong> to Polygon</li>
-      <li>🌐 Visit <strong>QuickSwap</strong></li>
-      <li>📋 Paste the <strong>JINDO contract address</strong></li>
-      <li>🔁 Swap for <strong>JINDO</strong></li>
-    </ol>
-  </div>
-
-  <img src="assets/images/create a logo of a j.png" alt="Swap Illustration" class="side-image right" />
-</section>
-
-<section id="swap-now" class="swap-section">
-  <h2 class="swap-title">🚀 Comming Soon!!!</h2>
-  <a href="https://quickswap.exchange/#/swap?outputCurrency=YOUR_TOKEN_ADDRESS" target="_blank" class="swap-button">
-    Launch QuickSwap
-  </a>
-</section>
-
-<section id="widgets">
-  <h2>Live Stats</h2>
- <!--<iframe src="https://dexscreener.com/polygon/YOUR_TOKEN_ADDRESS" width="100%" height="400"></iframe>-->
-</section>
-</main>
-
-<footer>
-  <p>Join the Jindo Army on <a href="" target="_blank">Telegram</a></p>
-</footer>
-
-<script src="script.js" defer></script>
 </body>
 </html>
