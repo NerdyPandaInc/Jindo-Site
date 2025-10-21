@@ -1,257 +1,87 @@
+:root {
+  --crimson: #9E1B32;
+  --cool-grey: #D3D3D3;
+  --charcoal: #333333;
+  --white: #FFFFFF;
+}
+
 body {
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #111;
-  color: #f5f5f5;
   margin: 0;
-  padding: 0;
-  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  background-color: var(--cool-grey);
+  color: var(--charcoal);
 }
 
 header {
-  background: linear-gradient(90deg, #ff6600, #ffcc00);
-  padding: 2rem;
-  color: #000;
-}
-
-section {
-  margin: 2rem auto;
-  max-width: 600px;
-  padding: 1rem;
-  background-color: #222;
-  border-radius: 8px;
-}
-
-ul, ol {
-  text-align: left;
-  margin: 1rem auto;
-  max-width: 400px;
-}
-
-iframe {
-  border: none;
-  margin-top: 1rem;
-  border-radius: 8px;
-}
-
-.tokenomics-section {
-  background: linear-gradient(145deg, #222, #111);
-  padding: 2.5rem;
-  border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(255, 153, 0, 0.2);
-  margin: 2rem auto;
-  max-width: 600px;
-  animation: fadeInUp 1.2s ease-in-out;
-}
-
-.tokenomics-title {
-  font-size: 2.5rem;
-  font-family: 'Segoe UI', sans-serif;
-  color: #ffcc00;
-  margin-bottom: 1rem;
-  text-shadow: 0 1px 2px #000;
-  text-transform: uppercase;
-  letter-spacing: 1.5px;
-}
-
-.tokenomics-list {
-  list-style: none;
-  padding: 0;
-  margin: 0 auto;
-  text-align: left;
-  font-size: 1.4rem;
-  line-height: 2rem;
-  color: #f5f5f5;
-}
-
-.tokenomics-list li {
-  margin-bottom: 1rem;
-  font-weight: 600;
-  transition: transform 0.3s ease;
-}
-
-.tokenomics-list li:hover {
-  transform: scale(1.03);
-  color: #ffd700;
-}
-
-/* Optional: subtle entrance animation */
-@keyframes fadeInUp {
-  from { opacity: 0; transform: translateY(30px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-.buy-section {
-  background: linear-gradient(135deg, #1e1e1e, #2a2a2a);
-  padding: 2.5rem;
-  margin: 2rem auto;
-  max-width: 600px;
-  border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0, 204, 255, 0.15);
-  animation: fadeInUp 1.3s ease-in-out;
-}
-
-.buy-title {
-  font-size: 2.3rem;
-  color: #ffd700;
-  font-family: 'Segoe UI', sans-serif;
-  text-transform: uppercase;
-  text-shadow: 0 1px 3px #000;
-  letter-spacing: 1.5px;
-  margin-bottom: 1rem;
-  text-align: center;
-}
-
-.buy-steps {
-  list-style: none;
-  padding-left: 0;
-  font-size: 1.3rem;
-  color: #f0f0f0;
-  line-height: 2rem;
-  counter-reset: step-counter;
-}
-
-.buy-steps li {
-  margin-bottom: 1rem;
   position: relative;
-  padding-left: 2rem;
-  font-weight: 500;
-  transition: transform 0.3s ease;
+  height: 80vh;
+  overflow: hidden;
 }
 
-.buy-steps li:hover {
-  transform: translateX(5px);
-  color: #00ffff;
+header video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.swap-section {
-  background: linear-gradient(135deg, #1a1a1a, #2c2c2c);
-  padding: 2rem;
-  margin: 2rem auto;
-  max-width: 600px;
-  border-radius: 12px;
-  text-align: center;
-  box-shadow: 0 4px 20px rgba(0, 204, 255, 0.15);
-}
-
-.swap-title {
-  font-size: 2rem;
-  color: #ffd700;
-  margin-bottom: 1rem;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-.swap-button {
-  display: inline-block;
-  background-color: #00ccff;
-  color: #000;
-  padding: 0.75rem 1.5rem;
-  font-size: 1.2rem;
-  font
-}
-.tokenomics-wrapper,
-.buy-wrapper {
+header .overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.5);
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  background: linear-gradient(145deg, #222, #111);
-  padding: 2rem;
-  border-radius: 12px;
-  margin: 2rem auto;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-  flex-wrap: wrap;
-  max-width: 900px;
+  justify-content: center;
+  color: var(--white);
+  text-align: center;
 }
 
-.tokenomics-content,
-.buy-content {
-  flex: 1 1 60%;
+.section {
+  padding: 2rem;
+}
+
+.ethos {
+  background-color: var(--crimson);
+  color: var(--white);
+  padding: 2rem;
+}
+
+.ethos h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.ethos ul {
+  list-style: none;
+  padding: 0;
+}
+
+.ethos li {
+  margin-bottom: 0.5rem;
+}
+
+.roster, .videos, .schedule {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  background: var(--white);
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+footer {
+  background: var(--charcoal);
+  color: var(--white);
+  text-align: center;
   padding: 1rem;
 }
 
-.side-image {
-  width: 100px;
-  height: auto;
-  flex: 1 1 15%;
-  margin: 1rem;
-}
-
-.side-image.left {
-  order: -1;
-}
-
-@media (max-width: 768px) {
-  .tokenomics-wrapper,
-  .buy-wrapper {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .side-image {
-    order: 0;
-    width: 80px;
-  }
-
-  .tokenomics-content,
-  .buy-content {
-    flex: 1 1 100%;
-  }
-}
-.side-image.center {
-  display: block;
-  margin: 20px auto;
-  max-width: 100%;
-  height: auto;
-}
-.featured-image {
-  display: block;
-  margin: 20px auto;
-  max-width: 90%;
-  width: 600px;
-  height: auto;
-}
-/* 2) CSS: in your global stylesheet */
-#memeTicker {
-  overflow: hidden;
-  white-space: nowrap;
-  padding: 14px 0;
-  margin-top: 15px; /* ⬅ Adds vertical space from elements above */
-  background-color: transparent; /* ⬅ Transparent background */
-  color: #fff;
-  font-family: monospace;
-  font-size: 20px;
-}
-
-#memeTicker-content {
-  display: inline-block;
-  padding-left: 100%;
-  animation: scroll-rtl 50s linear infinite; /* ⬅ Slower scroll (was 30s) */
-}
-
-@keyframes scroll-rtl {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-100%); }
-}
-.coin-flip {
-  width: 300px;
-  height: 300px;
-  display: block;
-  margin: 0 auto;
-  transform-style: preserve-3d;
-  animation: flip 10s linear infinite;
-}
-
-@keyframes flip {
-  from { transform: rotateY(0deg); }
-  to { transform: rotateY(360deg); }
-}
-.coin-flip {
-  margin-bottom: 5px; /* Reduce space under the image */
-}
-
-h1 {
-  margin-top: 5px; /* Reduce space above the heading */
-}
-img.coin-flip + h1 {
-  margin-top: 5px;
+footer a {
+  color: var(--cool-grey);
+  margin: 0 0.5rem;
+  text-decoration: none;
 }
